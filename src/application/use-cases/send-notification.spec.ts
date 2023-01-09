@@ -12,8 +12,6 @@ describe('Send Notification', () => {
       recipientId: 'example-recipient-id',
     });
 
-    console.log(notificationsRepository.notifications);
-
     expect(notificationsRepository.notifications).toHaveLength(1);
     expect(notificationsRepository.notifications[0]).toEqual(notification);
   });
